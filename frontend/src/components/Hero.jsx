@@ -121,12 +121,16 @@ export default function Hero() {
                     }}
                     className="hero-visual"
                 >
-                    <img
-                        src="/images/atech-hero.png"
-                        alt="A-Tech website development and digital solutions"
-
-                        className="hero-image"
-                    />
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="hero-image"
+                      aria-label="A-Tech website and AI assistant"
+                    >
+                      <source src="/images/hero-ai.mp4" type="video/mp4" />
+                    </video>
                 </motion.div>
 
             </div>
