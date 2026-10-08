@@ -242,12 +242,12 @@ export default function LeadForm({ selectedServices = [] }) {
 
                         <span>
                             <MapPin size={17} />
-                            Plot No E-90,
+                            <strong>Head Office:</strong> Plot No E-90,
                             eden garden ,sikar road , Rajawas, jaipur , rajeshtan, India 302013
                         </span>
                         <span>
                                                     <MapPin size={17} />
-                                                   Plot no - 1,2
+                                                   <strong>Branch Office:</strong> Plot no - 1,2
                                                    Om plaza , vinobha margh, kings road, nirman nagar , jaipur, rajeshtan, India  302019
                                                 </span>
                     </div>

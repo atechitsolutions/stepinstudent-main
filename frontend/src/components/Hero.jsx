@@ -47,7 +47,7 @@ export default function Hero() {
                         }}
                     >
                        Websites, Apps & AI Assistants{" "}
-                       <em>Built Around</em>{" "}
+                       <em>Built for</em>{" "}
                        Your Business.
                     </motion.h1>
 
@@ -121,16 +121,16 @@ export default function Hero() {
                     }}
                     className="hero-visual"
                 >
-                    <video
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      className="hero-image"
-                      aria-label="A-Tech website and AI assistant"
-                    >
-                      <source src="/images/hero-ai.mp4" type="video/mp4" />
-                    </video>
+                   <video
+                     autoPlay
+                     muted
+                     loop
+                     playsInline
+                     className="hero-image"
+                     aria-label="A-Tech website and AI assistant"
+                   >
+                     <source src="/images/hero-ai.mp4" type="video/mp4" />
+                   </video>
                 </motion.div>
 
             </div>

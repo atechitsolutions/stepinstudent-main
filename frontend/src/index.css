@@ -2504,6 +2504,53 @@ textarea:focus-visible {
   }
 }
 
+/* ---------- HERO VIDEO FIT ---------- */
+.hero {
+  min-height: auto;
+  padding-top: clamp(132px, 15vh, 170px);
+  padding-bottom: clamp(52px, 7vh, 82px);
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 56px);
+}
+
+.hero-copy h1 {
+  max-width: 740px;
+  font-size: clamp(42px, 4.2vw, 72px);
+  line-height: 1.02;
+}
+
+.hero-visual {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: clamp(300px, 50vh, 500px);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 18px;
+  opacity: 0.94;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-image {
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
 /* ---------- SAFETY NET: NEVER FADE IMPORTANT UI ---------- */
 .btn,
 .nav-cta,
@@ -2632,6 +2679,21 @@ textarea:focus-visible {
 
 .service-card:nth-child(7)::before {
   background-image: url("/images/api-bg.png");
+}
+
+
+/* =========================================
+   08 — AI ASSISTANT & WEBSITE CHATBOT
+========================================= */
+
+.service-card:nth-child(8)::before {
+  background-image: url("/images/ai-assistant-chatbot.png");
+  width: 45%;
+  height: 35%;
+  right: -16px;
+  bottom: -18px;
+  background-position: right bottom;
+  opacity: 0.32;
 }
 
 
@@ -3523,33 +3585,4 @@ textarea:focus-visible {
         .project-content > p {
           font-size: 11px !important;
         }
-      }
-      .service-card:nth-child(8)::before {
-        background-image: url("/images/ai-assistant-chatbot.png");
-
-         content: "";
-         position: absolute;
-
-         right: -35px;
-         bottom: -35px;
-
-         width: 70%;
-         height: 62%;
-
-         background-repeat: no-repeat;
-         background-position: center;
-         background-size: contain;
-
-         opacity: 0.60;
-
-         /* Removes the dark/black parts of the generated artwork visually */
-         mix-blend-mode: multiply;
-
-         z-index: 0;
-         pointer-events: none;
-
-         transition:
-           transform 0.45s ease,
-           opacity 0.45s ease;
-
       }
