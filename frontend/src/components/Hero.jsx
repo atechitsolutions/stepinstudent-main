@@ -29,7 +29,7 @@ export default function Hero() {
                         }}
                         className="eyebrow"
                     >
-                        TECHNOLOGY <i /> DESIGN <i /> GROWTH
+                        TECHNOLOGY <i /> AI <i /> GROWTH
                     </motion.div>
 
                     <motion.h1
@@ -46,7 +46,7 @@ export default function Hero() {
                             delay: 0.08,
                         }}
                     >
-                       Website Development & Digital Solutions{" "}
+                       Websites, Apps & AI Assistants{" "}
                        <em>Built Around</em>{" "}
                        Your Business.
                     </motion.h1>
@@ -65,10 +65,9 @@ export default function Hero() {
                             delay: 0.18,
                         }}
                     >
-                        From websites and web applications to custom
-                        software and digital growth solutions, A-Tech
-                        helps businesses turn ideas into practical
-                        digital products.
+                        A-Tech builds websites, web applications, and custom
+                        AI assistants that help businesses and personal brands
+                        engage visitors, answer questions, and grow online.
                     </motion.p>
 
                     <motion.div
