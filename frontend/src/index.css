@@ -3586,3 +3586,14 @@ textarea:focus-visible {
           font-size: 11px !important;
         }
       }
+      /* Smooth zoom effect for Company and Services links */
+      .footer-grid > div:nth-child(2) button,
+      .footer-grid > div:nth-child(3) button {
+        transition: transform 0.25s ease, color 0.25s ease;
+        transform-origin: left center;
+      }
+
+      .footer-grid > div:nth-child(2) button:hover,
+      .footer-grid > div:nth-child(3) button:hover {
+        transform: scale(1.08);
+      }
